@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "hood-talk"
+  "defaultProject": "hood-talk",
+  "cli": {
+    "analytics": "abe5b522-d2d3-475c-a407-6ece3c5db11e"
+  }
 }
