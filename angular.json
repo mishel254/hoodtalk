@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hoodtalk"
+    }
+  },
+  "defaultProject": "hoodtalk",
+  "cli": {
+    "analytics": "c48ce3a8-7667-4317-9a10-904894b1231a"
+  }
 }
