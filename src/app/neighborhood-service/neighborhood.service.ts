@@ -20,11 +20,11 @@ export class NeighborhoodService {
 
   }
 
-  // addNeighborhood(val:any){
+  addNeighborhood(val:any){
 
-  //   return this.http.post(this.APIUrl, val );
+    return this.http.post(this.APIUrl, val );
 
-  // }
+  }
 
   // updateNeighborhood(val:any){
 
