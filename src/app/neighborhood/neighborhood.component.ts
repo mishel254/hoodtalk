@@ -12,7 +12,7 @@ export class NeighborhoodComponent implements OnInit {
 
 
   constructor(
-    // private neighborhoodService: NeighborhoodService,
+    private neighborhoodService: NeighborhoodService,
   ) { }
 
   ngOnInit(): void{
