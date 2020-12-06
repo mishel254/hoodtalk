@@ -19,10 +19,10 @@ export class NeighborhoodComponent implements OnInit {
     this.refreshNeighborhoodList();
   }
 
-  // refreshNeighborhoodList(){
-  //   this.neighborhoodService.getNeighborhoodList().subscribe(data=>{
-  //     this.neighborhoodList=data;
-  //   })
-  // }
+  refreshNeighborhoodList(){
+    this.neighborhoodService.getNeighborhoodList().subscribe(data=>{
+      this.neighborhoodList=data;
+    })
+  }
 
 }
