@@ -1,4 +1,4 @@
-// import { NeighborhoodService } from './neighborhood-service/neighborhood.service';
+import { NeighborhoodService } from './neighborhood-service/neighborhood.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,7 +30,7 @@ import { AppComponent } from './app.component';
     // FormsModule,
     // ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [NeighborhoodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
