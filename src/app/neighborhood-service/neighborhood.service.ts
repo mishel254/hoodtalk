@@ -32,11 +32,11 @@ export class NeighborhoodService {
 
   }
 
-  // deleteNeighborhood(val:any){
+  deleteNeighborhood(val:any){
 
-  //   return this.http.post(this.APIUrl, val );
+    return this.http.post(this.APIUrl, val );
 
-  // }
+  }
 
   // getAllNeighborhoodNames(): Observable<any[]> {
 
