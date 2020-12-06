@@ -18,7 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     NeighborhoodComponent,
-    // NavbarComponent,
+    NavbarComponent,
     // ShowNeighborhoodComponent,
     // AddEditNeighborhoodComponent,
 
