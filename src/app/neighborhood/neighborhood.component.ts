@@ -16,7 +16,7 @@ export class NeighborhoodComponent implements OnInit {
   ) { }
 
   ngOnInit(): void{
-    // this.refreshNeighborhoodList();
+    this.refreshNeighborhoodList();
   }
 
   // refreshNeighborhoodList(){
