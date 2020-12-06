@@ -38,11 +38,11 @@ export class NeighborhoodService {
 
   }
 
-  // getAllNeighborhoodNames(): Observable<any[]> {
+  getAllNeighborhoodNames(): Observable<any[]> {
 
-  //   return this.http.get<any[]>(this.APIUrl);
+    return this.http.get<any[]>(this.APIUrl);
 
-  // }
+  }
 
 
 }
