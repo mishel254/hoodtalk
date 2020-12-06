@@ -27,7 +27,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    // FormsModule,
+    FormsModule,
     // ReactiveFormsModule,
   ],
   providers: [NeighborhoodService],
