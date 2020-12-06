@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
+import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 // import { HttpClientModule } from '@angular/common/http';
 // import { FormsModule,ReactiveFormsModule } from '@angular/forms';
@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // NeighborhoodComponent,
+    NeighborhoodComponent,
     // NavbarComponent,
     // ShowNeighborhoodComponent,
     // AddEditNeighborhoodComponent,
