@@ -26,11 +26,11 @@ export class NeighborhoodService {
 
   }
 
-  // updateNeighborhood(val:any){
+  updateNeighborhood(val:any){
 
-  //   return this.http.post(this.APIUrl, val );
+    return this.http.post(this.APIUrl, val );
 
-  // }
+  }
 
   // deleteNeighborhood(val:any){
 
