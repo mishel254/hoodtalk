@@ -8,7 +8,7 @@ import { NeighborhoodService } from '../neighborhood-service/neighborhood.servic
   styleUrls: ['./neighborhood.component.css']
 })
 export class NeighborhoodComponent implements OnInit {
-  // neighborhoodList:any = [];
+  neighborhoodList:any = [];
 
 
   constructor(
