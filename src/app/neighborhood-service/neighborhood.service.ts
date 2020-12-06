@@ -12,7 +12,7 @@ export class NeighborhoodService {
 
   readonly APIUrl = 'https://hoodhub.herokuapp.com/create_hood/';
 
-  // constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   // getNeighborhoodList(): Observable<any[]> {
 
