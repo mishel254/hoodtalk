@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class NeighborhoodService {
 
 
-  // readonly APIUrl = 'https://hoodhub.herokuapp.com/create_hood/';
+  readonly APIUrl = 'https://hoodhub.herokuapp.com/create_hood/';
 
   // constructor(private http: HttpClient) { }
 
