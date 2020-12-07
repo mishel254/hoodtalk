@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { InterfaceComponent } from './components/interface/interface.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { HttpClientModule }  from '@angular/common/http'
+import { HoodService } from './services/hood.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProfileComponent,
     InterfaceComponent,
     NavbarComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [HoodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
