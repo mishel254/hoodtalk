@@ -4,21 +4,32 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AllHoodsComponent } from './all-hoods/all-hoods.component';
+import { UsersComponent } from './components/users/users.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './navbar/navbar.component';
+import { InterfaceComponent } from './components/interface/interface.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
+    UsersComponent,
+    ProfileComponent,
+    InterfaceComponent,
+    NavbarComponent,
     AllHoodsComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
-    FormsModule
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
