@@ -45,8 +45,8 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Hood</th>
-                        <th scope="col">Hood</th>
+                        <th scope="col">Hood </th>
+                        <th scope="col">Hood </th>
                        
                       </tr>
                     </thead>
@@ -57,9 +57,9 @@
                         <td>Nairobi</td>
                        
                       </tr>
-                      <tr>
+                      <tr *ngFor="let place of hoods">
                         <th scope="row">2</th>
-                        <td>Mombasa</td>
+                        <td>{{place.name}}</td>
                         <td>Nairobi</td>
                         
                       </tr>
@@ -67,6 +67,12 @@
                         <th scope="row">3</th>
                         <td>Kwale</td>
                         <td>Nairobi</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>{{objhood.location}}</td>
+                        <td>{{objhood.name}}</td>
                         
                       </tr>
                     </tbody>
