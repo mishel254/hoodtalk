@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { InterfaceComponent } from './components/interface/interface.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HoodService } from './services/hood.service';
+import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { AuthService, AuthInterceptor, AuthGuard } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     InterfaceComponent,
     NavbarComponent,
     AllHoodsComponent,
+    HttpClientModule,
+    SignupFormComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FontAwesomeModule
   ],
-  providers: [],
+
+  providers: [HoodService,AuthService,AuthGuard,
+    {
+    provide:HTTP_INTERCEPTORS,
+    useClass:AuthInterceptor,
+    multi:true,
+  },
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
