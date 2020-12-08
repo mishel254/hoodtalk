@@ -4,9 +4,8 @@ import { CanActivate, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { tap, shareReplay } from 'rxjs/operators';
 import jwtDecode from 'jwt-decode';
-import moment from 'moment';
-import { loadavg } from 'os';
-import { nextTick } from 'process';
+import * as moment from 'moment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +32,7 @@ export class AuthService {
 
   login(username:string, password:string){
     return this.http.post(
-      this.apiRoot.concat('login/'),
+      this.apiRoot.concat('token/'),
       { username, password }
     ).pipe(
       tap(response => this.setSession(response)),
@@ -77,6 +76,10 @@ export class AuthService {
 
   isLoggedOut(){
     return !this.isLoggedIn()
+  }
+
+  isLoggedIn(){
+    return moment().isBefore(this.getExpiration())
   }
 }
 

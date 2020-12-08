@@ -13,7 +13,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HoodService } from './services/hood.service';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
-import { AuthService, AuthInterceptor, AuthGuard } from './auth.service';
+import { AuthService, AuthInterceptor, AuthGuard } from './services/auth.service';
 
 @NgModule({
   declarations: [

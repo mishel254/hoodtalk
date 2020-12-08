@@ -15,13 +15,11 @@ export class LoginFormComponent implements OnInit {
     private router: Router,
   ) { }
 
-  ngOnInit(): void {
-    login(username:stringify, password:string)
-  }
-
+  ngOnInit(): void {}
+  
   login(username: string, password: string) {
     this.authService.login(username, password).subscribe(
-      success => this.router.navigate(['list']),
+      success => this.router.navigate(['/']),
       error => this.error = error
     );
   }
