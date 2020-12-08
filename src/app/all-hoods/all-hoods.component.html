@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <app-search-f (searchOutput)= "hoodSearch($event)"></app-search-f>
+      <div class="container">
+          <div class="container allhoods">
+              <div class="card" appHighlight *ngFor="let hood of hoods" style="width: 22rem;" class="hood">
+                <div class="card-body">
+                  <h5 class="card-title">Hood Name: &nbsp;{{hood.name}} </h5>
+                  <div class="card-text">
+                    <hr>
+                    <div class="desc"><span class="top">Description:</span> &nbsp;{{hood.description}} 
+                    </div>
+                    <hr>
+                    <div class="card-subtitle mb-2"><span class="top">Location:</span> &nbsp;{{hood.location}}</div>
+                  </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="btn-group" role="group" aria-label="Third group">
+                      <button class="btn btn-sm btn-success" id="visit"><a href="{{reposit.html_url}}" class="card-link">Visit &nbsp; <i class="fa fa-arrow-circle-right" style="font-size:16px"></i></a> </button> 
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+  </div>
